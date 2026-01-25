@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: catalogue-cmap
+data:
+  MONGO: true
+  MONGO_URL: mongodb://mongo-ip:27017/catalogue
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: catalogue
+spec:
+  selector:
+    appName: catalogue
+  ports:
+    - port: 8080 # Service port
+      targetPort: 8080  # Pod container port
+  type: ClusterIP # by default cluster ip
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalogue
+  labels:
+    appName: catalogue
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      appName: catalogue
+  template:
+    metadata:
+      labels:
+        appName: catalogue
+    spec:
+      containers:
+        - name: catalogue
+          image: public.ecr.aws/w8x4g9h7/roboshop-v3/catalogue
+          envFrom:
+            - configMapRef:
+                name: catalogue-cmap
+
+
+
