@@ -4,7 +4,7 @@ metadata:
   name: shipping-schema
 data:
   DB_TYPE: "mysql"
-  APP_GIT_URL: "https://github.com/pdevops87/roboshop-devops-project-v3/shipping"
+  APP_GIT_URL: "https://github.com/roboshop-devops-project-v3/shipping"
   DB_HOST: "mysql-dev.pdevops78.online"
   DB_USER: "root"
   DB_PASS: "RoboShop@1"
