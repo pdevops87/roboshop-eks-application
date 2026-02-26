@@ -3,13 +3,13 @@ kind: ConfigMap
 metadata:
   name: payment-cmap
 data:
-  CART_HOST: cart-ip
-  CART_PORT: 8080
-  USER_HOST: user-ip
-  USER_PORT: 8080
-  AMQP_HOST: rabbitmq-ip
-  AMQP_USER: roboshop
-  AMQP_PASS: roboshop123
+  CART_HOST: "cart"
+  CART_PORT: "8080"
+  USER_HOST: "user"
+  USER_PORT: "8080"
+  AMQP_HOST: "rabbitmq-dev.pdevops78.online"
+  AMQP_USER: "roboshop"
+  AMQP_PASS: "roboshop123"
 
 ---
 apiVersion: v1
