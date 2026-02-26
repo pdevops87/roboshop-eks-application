@@ -5,7 +5,7 @@ metadata:
 data:
   DB_TYPE: "mysql"
   APP_GIT_URL: "https://github.com/roboshop-devops-project-v3/shipping"
-  DB_HOST: "mysql-dev.pdevops78.online"
+  DB_HOST: "172.31.26.88"
   DB_USER: "root"
   DB_PASS: "RoboShop@1"
 

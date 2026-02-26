@@ -4,7 +4,7 @@ metadata:
   name: shipping-cmap
 data:
   CART_ENDPOINT: "cart:8080"
-  DB_HOST: "mysql-dev.pdevops78.online"
+  DB_HOST: "172.31.26.88"
 
 ---
 apiVersion: v1
