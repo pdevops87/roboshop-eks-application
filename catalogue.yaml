@@ -4,7 +4,7 @@ metadata:
   name: catalogue-cmap
 data:
   MONGO: "true"
-  MONGO_URL: "mongodb://mongodb-dev.pdevops78.online:27017/catalogue"
+  MONGO_URL: "mongodb://172.31.25.28:27017/catalogue"
 
 
 ---
