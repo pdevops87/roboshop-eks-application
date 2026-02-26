@@ -3,8 +3,8 @@ kind: ConfigMap
 metadata:
   name: catalogue-cmap
 data:
-  MONGO: true
-  MONGO_URL: mongodb://mongo-ip:27017/catalogue
+  MONGO: "true"
+  MONGO_URL: "mongodb://mongodb-dev.pdevops78.online:27017/catalogue"
 
 
 ---

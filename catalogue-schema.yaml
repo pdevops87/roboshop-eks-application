@@ -3,10 +3,10 @@ kind: ConfigMap
 metadata:
   name: catalogue-schema
 data:
-  DB_TYPE: mongo
-  APP_GIT_URL: https://github.com/pdevops87/roboshop-devops-project-v3/catalogue
-  DB_HOST: mongo-ip
-  SCHEMA_FILE: db/master-data.js
+  DB_TYPE: "mongo"
+  APP_GIT_URL: "https://github.com/pdevops87/roboshop-devops-project-v3/catalogue"
+  DB_HOST: "mongodb-dev.pdevops78.online"
+  SCHEMA_FILE: "db/master-data.js"
 
 ---
 apiVersion: batch/v1

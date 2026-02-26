@@ -3,8 +3,8 @@ kind: ConfigMap
 metadata:
   name: shipping-cmap
 data:
-  CART_ENDPOINT: cart-ip:cart-port
-  DB_HOST: mysql-ip
+  CART_ENDPOINT: "cart:8080"
+  DB_HOST: "mysql-dev.pdevops78.online"
 
 ---
 apiVersion: v1

@@ -3,9 +3,9 @@ kind: ConfigMap
 metadata:
   name: cart-cmap
 data:
-  CATALOGUE_HOST: catalogue-ip
-  CATALOGUE_PORT: 8080
-  REDIS_HOST: redis-ip
+  CATALOGUE_HOST: "catalogue"
+  CATALOGUE_PORT: "8080"
+  REDIS_HOST: "redis-dev.pdevops78.online"
 
 ---
 apiVersion: v1
