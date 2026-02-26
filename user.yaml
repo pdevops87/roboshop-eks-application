@@ -4,8 +4,8 @@ metadata:
   name: user-cmap
 data:
   MONGO: "catalogue"
-  MONGO_URL: "mongodb://mongodb-dev.pdevops78.online:27017/users"
-  REDIS_URL: "redis://redis-dev.pdevops78.online:6379"
+  MONGO_URL: "mongodb://172.31.25.28:27017/users"
+  REDIS_URL: "redis://13.222.58.137:6379"
 
 ---
 apiVersion: v1
