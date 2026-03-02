@@ -14,8 +14,8 @@ variable "env" {
 variable "components" {
   default = {
     mongodb     =   ""
-    redis       =   ""
-    mysql       =   ""
-    rabbitmq    =   ""
+#     redis       =   ""
+#     mysql       =   ""
+#     rabbitmq    =   ""
   }
 }
