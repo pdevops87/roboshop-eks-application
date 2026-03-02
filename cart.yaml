@@ -40,6 +40,9 @@ spec:
       containers:
         - name: cart
           image: public.ecr.aws/w8x4g9h7/roboshop-v3/cart
+          env:
+            - name: INSTANA_ENABLED
+              value: "false"
           envFrom:
             - configMapRef:
                 name: cart-cmap

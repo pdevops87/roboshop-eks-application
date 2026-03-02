@@ -40,6 +40,10 @@ spec:
       containers:
         - name: user
           image: public.ecr.aws/w8x4g9h7/roboshop-v3/user
+          env:
+            env:
+             - name: INSTANA_ENABLED
+               value: "false"
           envFrom:
             - configMapRef:
                 name: user-cmap
