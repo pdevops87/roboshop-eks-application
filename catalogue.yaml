@@ -44,8 +44,8 @@ spec:
             - configMapRef:
                 name: catalogue-cmap
           env:
-            - name: INSTANA_DISABLE_TRACING
-              value: "true"
+            - name: INSTANA_ENABLED
+              value: "false"
 
 
 
