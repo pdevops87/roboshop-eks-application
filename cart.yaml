@@ -5,7 +5,7 @@ metadata:
 data:
   CATALOGUE_HOST: "catalogue"
   CATALOGUE_PORT: "8080"
-  REDIS_HOST: "13.222.58.137"
+  REDIS_HOST: "172.31.69.229"
 
 ---
 apiVersion: v1
